@@ -40,17 +40,18 @@ with open(csvpath) as csvfile:
     average_change = round(sum(monthly_change)/len(monthly_change))
 
     #print out the results
-    print("Total Months:", total_month)
-    print("Total:", total_change)    
-    print("Average change:", average_change)
-    print("Greatest increase in Profits:", month_greatest_increase, "$",greatest_increase)
-    print("Greatest decrease in Profits:", month_greatest_decrease, "$", greatest_decrease) 
+    print(f"Financial Analysis")
+    print("----------------------------")
+    print(f"Total Months: {total_month}")  
+    print(f"Average  Change: ${average_change}")
+    print(f"Greatest increase in Profits: {month_greatest_increase} (${greatest_increase})")
+    print(f"Greatest decrease in Profits: {month_greatest_decrease} (${greatest_decrease})")
 
 Result = (
    f"Financial Analysis\n"
    f"----------------------------\n"
-   f"Total Months: ${total_month}\n"
-   f"Total: {total_change}\n"
+   f"Total Months: {total_month}\n"
+   f"Total: ${total_change}\n"
    f"Average  Change: ${average_change}\n"
    f"Greatest increase in Profits: {month_greatest_increase} (${greatest_increase})\n"
    f"Greatest decrease in Profits: {month_greatest_decrease} (${greatest_decrease})\n")
