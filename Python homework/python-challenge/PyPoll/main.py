@@ -67,7 +67,7 @@ f.write(f"Total Votes: {total_votes_cast}\n")
 f.write("----------------------------\n")
 for count in range(len(candidate_list)):
     f.write(f"{candidate_list[count]}: {percentage_each_candidate[count]}% ({votes_each_candidate[count]})\n")
-f.write("----------------------------")
+f.write("----------------------------\n")
 f.write(f"Winner: {winning_candidate}\n")
 
 f.close()
